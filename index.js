@@ -19,7 +19,7 @@ app.get('/coin/:coinName', async (req, res) => {
     } else {
       res.send(`El nombre de la moneda ${coinName} no fue encontrado en la base de datos`);
     }
-  } catch (error) {
+ } catch (error) {
     if (!error.response) {
       return res.send('Error: No se pudo conectar al servidor');
     }
