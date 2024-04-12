@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 //primer enpoint
 app.get('/coin/:coinName', async (req, res) => {
-  const coinName = req.params.coinName.toUpperCase();
+  const coinName = req.params.coinName.toLowerCase();
 
   try {
     const response = await axios.get(`https://api.coincap.io/v2/assets/${coinName}`);
