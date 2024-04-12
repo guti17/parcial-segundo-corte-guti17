@@ -8,7 +8,7 @@ app.use(express.json()); // Agrega el middleware para manejar solicitudes JSON
 
 // Endpoint para obtener el precio de una moneda
 app.get('/coin/:coinName', async (req, res) => {
-  const coinName = req.params.coinName.toUpperCase();
+  const coinName = req.params.coinName;
 
   try {
     const response = await axios.get(`https://api.coincap.io/v2/assets/${coinName}`);
