@@ -60,4 +60,5 @@ Lista de nombres de la clase:
 | URREA LARA, DEIVID NICOLAS   |
 | AZCONA, ANDRÉS                |
 
-
+### Link de API vercel
+https://parcial-segundo-corte-guti17.vercel.app/

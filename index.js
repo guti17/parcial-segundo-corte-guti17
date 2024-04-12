@@ -4,6 +4,7 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+//primer enpoint
 app.get('/coin/:coinName', async (req, res) => {
   const coinName = req.params.coinName.toUpperCase();
 
@@ -33,6 +34,7 @@ app.listen(PORT, () => {
   console.log(`El servidor está corriendo en el puerto ${PORT}`);
 });
 
+//segundo punto
 const users = [
     { name: 'SAMUEL', lastName: 'ACERO GARCIA' },
     { name: 'DAREK', lastName: 'ALJURI MARTINEZ' },
